@@ -16,9 +16,9 @@
 # Build settings
 markdown: kramdown
 permalink: pretty
-theme: minima
-plugins:
-  - jekyll-feed
+#theme: minima
+#plugins:
+#  - jekyll-feed
 
 
 sass:
