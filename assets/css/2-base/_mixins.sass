@@ -1,0 +1,30 @@
+@mixin vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+@mixin centerer
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin absolute_vertical_align()
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -moz-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  -o-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+
+@mixin ghostVerticalAlign()
+  &:before
+    content: ''
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+    width: .1px

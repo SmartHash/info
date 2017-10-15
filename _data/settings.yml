@@ -1,0 +1,31 @@
+#-------------------------------
+# General Site Settings
+# designication
+title: SmartHash
+subtext: Make your hastags work for you
+email: info@smarthash.ee
+
+
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: What is SmartHash, url: '#what-is-smarthash-section'}
+- {name: How SmartHash works, url: '#how-it-works-section'}
+- {name: Available for, url: '#available-for-section'}
+- {name: Contact Us, url: '#contact-section'}
+
+what-is_list:
+- {name: SmartHash is mobile APP}
+- {name: You don't need to find hastags for your images}
+- {name: Let SmartHash figure out hastags for You}
+- {name: Bring you hastags game to a whole new level}
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+
+
+
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

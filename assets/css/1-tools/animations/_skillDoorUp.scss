@@ -1,0 +1,31 @@
+%animationstart_skillDoorUp{
+  // height: 0%;
+  // width: 0%;
+  // top: 0%;
+  // overflow: hidden;
+  opacity: 0;
+}
+%skillDoorUp {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+}
+
+@keyframes flipInX {
+    0% {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% {
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}

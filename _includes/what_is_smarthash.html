@@ -1,0 +1,13 @@
+<section id="what-is-smarthash-section" class="sections" >
+    <h1 class="section-title">What is SmartHash</h1>
+    <div class="container section-container" id="what-is-smarthash-container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                {% for element in site.data.settings.what-is_list %}
+                <p class="list-element"><i class="list-pre-element">-</i>{{element.name}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

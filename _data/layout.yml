@@ -1,0 +1,9 @@
+# Layout settings
+
+animation: "bounceOut"
+
+# Images
+bg: "bg.jpeg"
+logo: "smartHash_Logo.png"
+
+
