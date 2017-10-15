@@ -18,6 +18,7 @@ markdown: kramdown
 permalink: pretty
 theme: minima
 baseurl: "info"
+siteurl: 'https://smarthash.github.io/'
 #plugins:
 #  - jekyll-feed
 
