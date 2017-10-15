@@ -16,7 +16,8 @@
 # Build settings
 markdown: kramdown
 permalink: pretty
-theme: 
+theme: minima
+baseurl: ""
 #plugins:
 #  - jekyll-feed
 
