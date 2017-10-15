@@ -4,12 +4,14 @@
 $('html,body').animate({scrollTop:0},100);
 $(window).on("load", function() {
     $('html,body').animate({scrollTop: 0}, 100);
+    sectionTopPadding = 60;
     viewportWidth = $(window).width();
     viewportHeight = $(window).height();
     $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
     $(".sub-text").fitText(1, { minFontSize: '16px', maxFontSize: '36px' });
     smoothScroll(300);
     removeLoader(2000);
+    $(document).on("scroll", onScroll);
     svgMagic();
 });
 
@@ -57,4 +59,19 @@ function svgMagic(){
         .setTween(TweenMax.staggerTo(someClassName, duration, {className: '+=' + animationClass, transformOrigin: 'top left', ease: Power4.easeOut}, stagger))
         //.addIndicators()
         .addTo(controller);
+}
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.navbar-nav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top - sectionTopPadding <= scrollPos && refElement.position().top + refElement.height() + sectionTopPadding > scrollPos) {
+            $('.navbar-nav ul li a').removeClass("main-navbar-selected");
+            currLink.addClass("main-navbar-selected");
+        }
+        else{
+            currLink.removeClass("main-navbar-selected");
+        }
+    });
 }
