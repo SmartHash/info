@@ -22,6 +22,14 @@ body
     background-color: transparent
     border: none
     .container
+      .collapsed
+        background-color: $color1
+        span
+          background-color: $color4
+        &:hover
+          background-color: $color5
+          span
+            background-color: $color3
       a
         color: $color1
         &:hover
@@ -60,3 +68,8 @@ body
 
 .main-navbar-selected
   color: $color3 !important
+
+@media only screen and (max-width : 768px)
+  .main-navbar
+    background-color: $color4 !important
+    border: none

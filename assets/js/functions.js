@@ -13,6 +13,10 @@ $(window).on("load", function() {
     removeLoader(2000);
     $(document).on("scroll", onScroll);
     svgMagic();
+    $(document).on('click','body *',function(){
+        $('#navbar').collapse('hide');
+    });
+
 });
 
 function removeLoader(pauseTime){
