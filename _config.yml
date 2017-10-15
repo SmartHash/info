@@ -19,7 +19,6 @@ permalink: pretty
 theme: minima
 baseurl: "info/"
 siteurl: "https://smarthash.github.io"
-port: 4000
 #plugins:
 #  - jekyll-feed
 
