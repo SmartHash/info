@@ -57,10 +57,17 @@ function svgMagic(){
         //.addIndicators()
         .addTo(controller);
 
+    someClassName = '.what-is-smarthash-img';
+    animationClass = 'img-element-visible';
+    new ScrollMagic.Scene({triggerElement: "#what-is-smarthash-section", triggerHook: 'onCenter'})
+        .setTween(TweenMax.staggerTo(someClassName, duration, {className: '+=' + animationClass, transformOrigin: 'top left', ease: Power4.easeOut}, stagger))
+        //.addIndicators()
+        .addTo(controller);
+
     someClassName = '.how-it-work-element';
     animationClass = 'how-it-work-element-visible';
     new ScrollMagic.Scene({triggerElement: "#how-it-works-container", triggerHook: 'onCenter'})
-        .setTween(TweenMax.staggerTo(someClassName, duration, {className: '+=' + animationClass, transformOrigin: 'top left', ease: Power4.easeOut}, stagger))
+        .setTween(TweenMax.staggerTo(someClassName, duration, {className: '+=' + animationClass, transformOrigin: 'top left', ease: Power4.easeInOut}, stagger))
         //.addIndicators()
         .addTo(controller);
 }
