@@ -17,7 +17,7 @@
 markdown: kramdown
 permalink: pretty
 theme: minima
-baseurl: ""
+baseurl: "info"
 #plugins:
 #  - jekyll-feed
 
