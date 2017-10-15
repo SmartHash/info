@@ -9,7 +9,7 @@ $(window).on("load", function() {
     $("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
     $(".sub-text").fitText(1, { minFontSize: '16px', maxFontSize: '36px' });
     smoothScroll(300);
-    removeLoader(200);
+    removeLoader(2000);
     svgMagic();
 });
 
